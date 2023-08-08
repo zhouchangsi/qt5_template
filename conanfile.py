@@ -34,7 +34,6 @@ class algorithmRecipe(ConanFile):
 
     def build(self):
         cmake = CMake(self)
-        # cmake.configure(cli_args=["-DCMAKE_PREFIX_PATH=C:\\Qt\\Qt5.12.12\\5.12.12\\msvc2017_64"])
         cmake.configure()
         cmake.build()
 
